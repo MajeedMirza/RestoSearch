@@ -37,7 +37,7 @@ Public Class Form1
         LongLat = LongLat.Split(",")(0) & "," & LongLat.Split(",")(1)
         Dim radius As Integer = NumericUpDown1.Value * 1000
         Dim xmlURL As String = "https://maps.googleapis.com/maps/api/place/textsearch/xml?query=" & txtQuery.Text & "&location=" & LongLat & "&radius=" & radius & "&type=restaurant&key=AIzaSyCqd6GD5CClmBDrV9ANpDeIHBJ5qK0fHjU"
-        'Example URL: https://maps.googleapis.com/maps/api/place/textsearch/xml?query=&location=45.3406269,-75.7695564&radius=1000&type=restaurant&key=AIzaSyCqd6GD5CClmBDrV9ANpDeIHBJ5qK0fHjU
+        'Example URL: https://maps.googleapis.com/maps/api/place/textsearch/xml?query=&location=43.6426,-79.3871&radius=1000&type=restaurant&key=AIzaSyCqd6GD5CClmBDrV9ANpDeIHBJ5qK0fHjU
         Dim destinations As String = ""
         Dim ds As New DataSet
         ds.ReadXml(xmlURL)
